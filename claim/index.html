@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="canonical" href="https://inkpunk.xyz/claim">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ink Punk — Claim GTD Access</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+html, body { margin: 0; padding: 0; background: #07060A; overflow-x: hidden; }
+* { box-sizing: border-box; }
+a { color: #FFE800; text-decoration: none; }
+a:hover { color: #FF7A00; }
+input { font-family: 'IBM Plex Mono', ui-monospace, monospace; }
+input::placeholder { color: rgba(246,245,255,.35); }
+canvas { touch-action: none; }
+@keyframes ipScan { 0% { transform: translateY(-100%); } 100% { transform: translateY(100%); } }
+@keyframes ipCaret { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
+@keyframes ipShiftR { 0%, 92%, 100% { transform: translate(0,0); } 94% { transform: translate(-2px,1px); } 96% { transform: translate(2px,-1px); } }
+@keyframes ipSpin { to { transform: rotate(360deg); } }
+@keyframes ipPulse { 0%, 100% { opacity: .35; } 50% { opacity: 1; } }
+@keyframes ipBurst { 0% { transform: scale(.7); opacity: .9; } 100% { transform: scale(1.9); opacity: 0; } }
+@keyframes ipBar { 0% { width: 0%; } 100% { width: 100%; } }
+</style>
+</helmet>
+
+<div style="background:#07060A;color:#F6F5FF;font-family:'IBM Plex Mono',ui-monospace,monospace;min-height:100vh;position:relative;overflow-x:hidden">
+  <div style="position:fixed;inset:0;pointer-events:none;z-index:60;opacity:.45;background:repeating-linear-gradient(180deg,rgba(246,245,255,.045) 0px,rgba(246,245,255,.045) 1px,transparent 1px,transparent 3px)"></div>
+
+  <header style="position:sticky;top:0;z-index:50;background:rgba(7,6,10,.92);backdrop-filter:blur(8px);border-bottom:1px solid rgba(138,43,226,.55)">
+    <div style="max-width:1320px;margin:0 auto;padding:14px 20px;display:flex;align-items:center;gap:18px;flex-wrap:wrap">
+      <a href="../" style="display:flex;align-items:center;gap:10px;color:#F6F5FF;flex:0 0 auto">
+        <span style="width:14px;height:14px;background:#FF1F3D;box-shadow:3px 0 0 #8A2BE2,-3px 0 0 #FFE800;display:block"></span>
+        <span style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:20px;letter-spacing:.22em;animation:ipShiftR 7s infinite steps(1)">INK PUNK</span>
+      </a>
+      <nav style="display:flex;align-items:center;gap:4px;margin-left:auto;flex-wrap:wrap;justify-content:flex-end">
+        <a href="../" style="font-family:'Chakra Petch',sans-serif;font-weight:600;font-size:13px;letter-spacing:.14em;padding:8px 10px;border:1px solid transparent;color:#F6F5FF" style-hover="border-color:#FFE800;color:#FFE800">GALLERY</a>
+        <a href="../roadmap/" style="font-family:'Chakra Petch',sans-serif;font-weight:600;font-size:13px;letter-spacing:.14em;padding:8px 10px;border:1px solid transparent;color:#F6F5FF" style-hover="border-color:#FFE800;color:#FFE800">ROADMAP</a>
+        <a href="../claim/" style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:13px;letter-spacing:.14em;color:#07060A;background:#8A2BE2;padding:9px 16px;border:1px solid #8A2BE2;color:#F6F5FF">CLAIM GTD ACCESS</a>
+        <a href="../whitelist/" style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:13px;letter-spacing:.14em;color:#07060A;background:#FFE800;padding:9px 16px;border:1px solid #FFE800" style-hover="background:#FF7A00;border-color:#FF7A00;color:#07060A">JOIN WHITELIST</a>
+      </nav>
+    </div>
+  </header>
+
+  <main style="max-width:1080px;margin:0 auto;padding:38px 20px 64px">
+
+    <div style="display:flex;gap:10px;align-items:center;font-size:11px;letter-spacing:.28em;color:#FF7A00;margin-bottom:14px">
+      <span style="width:8px;height:8px;background:#8A2BE2;display:block;animation:ipPulse 2.2s infinite"></span>GTD CLAIM TERMINAL
+    </div>
+    <h1 style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:clamp(32px,6vw,56px);line-height:.98;margin:0 0 14px;color:#F6F5FF;text-shadow:3px 0 0 rgba(138,43,226,.85),-3px 0 0 rgba(255,31,61,.55);animation:ipShiftR 9s infinite steps(1)">1,000 <span style="color:#8A2BE2;text-shadow:none">GTD ACCESS</span> SPOTS</h1>
+    <p style="font-size:15px;line-height:1.75;color:rgba(246,245,255,.78);margin:0 0 22px;max-width:64ch;text-wrap:pretty">First come, first qualified. A spot is secured only when the full claim process reaches the qualified state — opening this page does not reserve anything.</p>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-bottom:26px">
+      <div style="border:1px solid #FF7A00;background:#0A0810;padding:18px">
+        <div style="font-size:10px;letter-spacing:.24em;color:rgba(246,245,255,.55);margin-bottom:8px">GTD SPOTS CLAIMED</div>
+        <div style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:34px;color:#FFE800;transition:opacity .4s ease;opacity:{{ countOpacity }}">{{ claimedLabel }}</div>
+        <div style="font-size:10px;letter-spacing:.2em;color:{{ countNoteColor }};margin-top:8px">{{ countNote }}</div>
+      </div>
+      <div style="border:1px solid rgba(138,43,226,.55);background:#0A0810;padding:18px">
+        <div style="font-size:10px;letter-spacing:.24em;color:rgba(246,245,255,.55);margin-bottom:8px">MINT DATE</div>
+        <div style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:19px;color:#F6F5FF;line-height:1.35">24 AUGUST 2026<br />13:30 UTC</div>
+      </div>
+      <div style="border:1px solid rgba(255,232,0,.5);background:#0A0810;padding:18px;display:flex;flex-direction:column;gap:10px;justify-content:center">
+        <div style="font-size:10px;letter-spacing:.24em;color:rgba(246,245,255,.55)">MINT ON OPENSEA</div>
+        <a href="https://opensea.io/collection/inkpunk-/overview" target="_blank" rel="noopener" style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:13px;letter-spacing:.16em;color:#FFE800">OPEN COLLECTION ↗</a>
+      </div>
+    </div>
+
+    <sc-if value="{{ showBoot }}" hint-placeholder-val="{{ false }}">
+      <div style="border:1px solid rgba(138,43,226,.55);background:#0A0810;padding:26px;display:flex;gap:14px;align-items:center;margin-bottom:22px">
+        <span style="width:16px;height:16px;border:2px solid rgba(246,245,255,.25);border-top-color:#FFE800;border-radius:50%;display:block;animation:ipSpin .8s linear infinite"></span>
+        <span style="font-size:12px;letter-spacing:.2em;color:rgba(246,245,255,.7)">CHECKING YOUR CLAIM SESSION<span style="animation:ipCaret 1s steps(1) infinite">_</span></span>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ showGate }}" hint-placeholder-val="{{ true }}">
+      <div style="border:1px solid #FFE800;background:#0A0810;position:relative;overflow:hidden;padding:clamp(24px,5vw,44px);margin-bottom:22px">
+        <div style="position:absolute;left:0;right:0;height:110px;pointer-events:none;opacity:.25;background:linear-gradient(180deg,transparent,rgba(255,232,0,.35),transparent);animation:ipScan 7s linear infinite"></div>
+        <h2 style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:clamp(24px,4.5vw,38px);letter-spacing:.04em;margin:0 0 14px;color:#F6F5FF">CLAIM YOUR GTD ACCESS</h2>
+        <p style="font-size:14px;line-height:1.8;color:rgba(246,245,255,.78);margin:0 0 22px;max-width:56ch;text-wrap:pretty">Starting a claim opens a session that carries your progress through all five tasks. You can leave and come back — the session is remembered on this device.</p>
+        <button type="button" onClick="{{ onStartClaim }}" disabled="{{ starting }}" style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:14px;letter-spacing:.2em;background:{{ startBg }};color:#07060A;border:1px solid {{ startBg }};padding:16px 24px;cursor:{{ startCursor }};min-height:52px;display:flex;align-items:center;gap:10px">
+          <sc-if value="{{ starting }}" hint-placeholder-val="{{ false }}">
+            <span style="width:14px;height:14px;border:2px solid rgba(7,6,10,.35);border-top-color:#07060A;border-radius:50%;display:block;animation:ipSpin .8s linear infinite"></span>
+          </sc-if>
+          {{ startLabel }}
+        </button>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ showInvalid }}" hint-placeholder-val="{{ false }}">
+      <div style="border:1px solid #FF1F3D;background:#0A0810;padding:clamp(24px,5vw,44px);margin-bottom:22px">
+        <h2 style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:clamp(22px,4vw,32px);letter-spacing:.04em;margin:0 0 14px;color:#FF1F3D">CLAIM SESSION EXPIRED OR INVALID</h2>
+        <p style="font-size:14px;line-height:1.8;color:rgba(246,245,255,.78);margin:0 0 22px;max-width:56ch;text-wrap:pretty">The claim session stored on this device is no longer recognised, so it cannot be continued. Starting a new claim gives you a fresh session — nothing already qualified is affected.</p>
+        <button type="button" onClick="{{ onRestart }}" style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:14px;letter-spacing:.2em;background:#FFE800;color:#07060A;border:1px solid #FFE800;padding:16px 24px;cursor:pointer;min-height:52px">START NEW CLAIM</button>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ showOffline }}" hint-placeholder-val="{{ false }}">
+      <div style="border:1px solid #FF7A00;background:#0A0810;padding:clamp(24px,5vw,44px);margin-bottom:22px">
+        <h2 style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:clamp(22px,4vw,32px);letter-spacing:.04em;margin:0 0 14px;color:#FF7A00">CLAIM SERVER TEMPORARILY UNAVAILABLE</h2>
+        <p style="font-size:14px;line-height:1.8;color:rgba(246,245,255,.78);margin:0 0 22px;max-width:56ch;text-wrap:pretty">The claim service could not be reached. Your session has not been lost — this is a connection problem, not an invalid claim.</p>
+        <button type="button" onClick="{{ onRetry }}" style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:14px;letter-spacing:.2em;background:#FFE800;color:#07060A;border:1px solid #FFE800;padding:16px 24px;cursor:pointer;min-height:52px">TRY AGAIN</button>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ exhausted }}" hint-placeholder-val="{{ false }}">
+      <div style="border:1px solid #FFE800;background:#0A0810;padding:clamp(22px,4vw,40px);text-align:center">
+        <h2 style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:clamp(24px,4.5vw,38px);letter-spacing:.04em;margin:0 0 14px;color:#F6F5FF">ALL 1,000 SPOTS CLAIMED</h2>
+        <p style="font-size:15px;line-height:1.8;color:rgba(246,245,255,.8);margin:0 auto 22px;max-width:56ch;text-wrap:pretty">Every guaranteed spot has been claimed. The whitelist form is still open and spots will be raffled from those entries ahead of the mint.</p>
+        <a href="../whitelist/" style="display:inline-flex;font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:14px;letter-spacing:.18em;background:#FFE800;color:#07060A;padding:16px 24px;min-height:52px;align-items:center" style-hover="background:#FF7A00">JOIN WHITELIST</a>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ showFlow }}" hint-placeholder-val="{{ true }}">
+      <div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:26px">
+          <sc-for list="{{ progress }}" as="p" hint-placeholder-count="6">
+            <div style="border:1px solid {{ p.border }};background:{{ p.bg }};color:{{ p.color }};font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:11px;letter-spacing:.18em;padding:9px 13px;display:flex;gap:8px;align-items:center">
+              <span>{{ p.label }}</span><span style="font-size:10px;opacity:.85">{{ p.mark }}</span>
+            </div>
+          </sc-for>
+        </div>
+
+        <div style="display:flex;flex-direction:column;gap:16px">
+
+          <div style="border:1px solid {{ t1Border }};background:#0A0810">
+            <div style="display:flex;gap:12px;align-items:center;padding:14px;border-bottom:1px solid rgba(246,245,255,.1);flex-wrap:wrap">
+              <span style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:11px;letter-spacing:.2em;color:{{ t1Color }}">TASK 01</span>
+              <span style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:16px;letter-spacing:.06em;color:#F6F5FF">Follow Ink Punk on X</span>
+              <span style="margin-left:auto;font-size:10px;letter-spacing:.2em;color:{{ t1Color }}">{{ t1Status }}</span>
+            </div>
+            <sc-if value="{{ t1Open }}" hint-placeholder-val="{{ true }}">
+              <div style="padding:18px;display:flex;flex-direction:column;gap:14px">
+                <label for="cl-username" style="font-size:13px;letter-spacing:.16em;color:#FFE800">X USERNAME</label>
+                <input id="cl-username" type="text" autoComplete="off" spellCheck="false" placeholder="Enter your X username" value="{{ username }}" onChange="{{ onUsername }}" style="background:#07060A;border:1px solid rgba(246,245,255,.28);color:#F6F5FF;font-size:15px;padding:14px;min-height:48px;outline:none;max-width:360px" style-focus="border-color:#FFE800" />
+                <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center">
+                  <button type="button" onClick="{{ onFollow }}" disabled="{{ followDisabled }}" style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:13px;letter-spacing:.18em;background:{{ followBg }};color:{{ followFg }};border:1px solid {{ followBg }};padding:14px 20px;cursor:{{ followCursor }};min-height:48px">FOLLOW INK PUNK ON X ↗</button>
+                  <sc-if value="{{ t1Visited }}" hint-placeholder-val="{{ false }}">
+                    <button type="button" onClick="{{ onVerify1 }}" disabled="{{ verifying }}" style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:13px;letter-spacing:.18em;background:transparent;color:#FFE800;border:1px solid #FFE800;padding:14px 20px;cursor:pointer;min-height:48px">VERIFY</button>
+                  </sc-if>
+                </div>
+                <sc-if value="{{ v1 }}" hint-placeholder-val="{{ false }}">
+                  <div style="border:1px solid rgba(138,43,226,.6);background:rgba(138,43,226,.1);padding:14px">
+                    <div style="font-size:11px;letter-spacing:.2em;color:#8A2BE2;margin-bottom:10px">VERIFYING<span style="animation:ipCaret 1s steps(1) infinite">_</span></div>
+                    <div style="height:4px;background:rgba(246,245,255,.12)"><div style="height:4px;background:#FFE800;animation:ipBar 2s linear forwards"></div></div>
+                  </div>
+                </sc-if>
+                <p style="margin:0;font-size:11px;line-height:1.7;color:rgba(246,245,255,.45)">Ink Punk cannot read your X account, so this is recorded as your own completion checkpoint, not an X confirmation.</p>
+              </div>
+            </sc-if>
+          </div>
+
+          <div style="border:1px solid {{ t2Border }};background:#0A0810">
+            <div style="display:flex;gap:12px;align-items:center;padding:14px;border-bottom:1px solid rgba(246,245,255,.1);flex-wrap:wrap">
+              <span style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:11px;letter-spacing:.2em;color:{{ t2Color }}">TASK 02</span>
+              <span style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:16px;letter-spacing:.06em;color:#F6F5FF">Like the Pinned Post</span>
+              <span style="margin-left:auto;font-size:10px;letter-spacing:.2em;color:{{ t2Color }}">{{ t2Status }}</span>
+            </div>
+            <sc-if value="{{ t2Open }}" hint-placeholder-val="{{ false }}">
+              <div style="padding:18px;display:flex;flex-direction:column;gap:14px">
+                <p style="margin:0;font-size:13px;line-height:1.8;color:rgba(246,245,255,.8)">Open the Ink Punk pinned post, like it, then return here.</p>
+                <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center">
+                  <button type="button" onClick="{{ onLike }}" style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:13px;letter-spacing:.18em;background:#FFE800;color:#07060A;border:1px solid #FFE800;padding:14px 20px;cursor:pointer;min-height:48px">LIKE PINNED POST ↗</button>
+                  <sc-if value="{{ t2Visited }}" hint-placeholder-val="{{ false }}">
+                    <button type="button" onClick="{{ onVerify2 }}" disabled="{{ verifying }}" style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:13px;letter-spacing:.18em;background:transparent;color:#FFE800;border:1px solid #FFE800;padding:14px 20px;cursor:pointer;min-height:48px">VERIFY</button>
+                  </sc-if>
+                </div>
+                <sc-if value="{{ v2 }}" hint-placeholder-val="{{ false }}">
+                  <div style="border:1px solid rgba(138,43,226,.6);background:rgba(138,43,226,.1);padding:14px">
+                    <div style="font-size:11px;letter-spacing:.2em;color:#8A2BE2;margin-bottom:10px">VERIFYING<span style="animation:ipCaret 1s steps(1) infinite">_</span></div>
+                    <div style="height:4px;background:rgba(246,245,255,.12)"><div style="height:4px;background:#FFE800;animation:ipBar 2s linear forwards"></div></div>
+                  </div>
+                </sc-if>
+              </div>
+            </sc-if>
+          </div>
+
+          <div style="border:1px solid {{ t3Border }};background:#0A0810">
+            <div style="display:flex;gap:12px;align-items:center;padding:14px;border-bottom:1px solid rgba(246,245,255,.1);flex-wrap:wrap">
+              <span style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:11px;letter-spacing:.2em;color:{{ t3Color }}">TASK 03</span>
+              <span style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:16px;letter-spacing:.06em;color:#F6F5FF">Repost the Pinned Post</span>
+              <span style="margin-left:auto;font-size:10px;letter-spacing:.2em;color:{{ t3Color }}">{{ t3Status }}</span>
+            </div>
+            <sc-if value="{{ t3Open }}" hint-placeholder-val="{{ false }}">
+              <div style="padding:18px;display:flex;flex-direction:column;gap:14px">
+                <p style="margin:0;font-size:13px;line-height:1.8;color:rgba(246,245,255,.8)">Repost the Ink Punk pinned post on your own timeline, then return here.</p>
+                <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center">
+                  <button type="button" onClick="{{ onRepost }}" style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:13px;letter-spacing:.18em;background:#FF7A00;color:#07060A;border:1px solid #FF7A00;padding:14px 20px;cursor:pointer;min-height:48px">REPOST PINNED POST ↗</button>
+                  <sc-if value="{{ t3Visited }}" hint-placeholder-val="{{ false }}">
+                    <button type="button" onClick="{{ onVerify3 }}" disabled="{{ verifying }}" style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:13px;letter-spacing:.18em;background:transparent;color:#FFE800;border:1px solid #FFE800;padding:14px 20px;cursor:pointer;min-height:48px">VERIFY</button>
+                  </sc-if>
+                </div>
+                <sc-if value="{{ v3 }}" hint-placeholder-val="{{ false }}">
+                  <div style="border:1px solid rgba(138,43,226,.6);background:rgba(138,43,226,.1);padding:14px">
+                    <div style="font-size:11px;letter-spacing:.2em;color:#8A2BE2;margin-bottom:10px">VERIFYING<span style="animation:ipCaret 1s steps(1) infinite">_</span></div>
+                    <div style="height:4px;background:rgba(246,245,255,.12)"><div style="height:4px;background:#FFE800;animation:ipBar 2s linear forwards"></div></div>
+                  </div>
+                </sc-if>
+              </div>
+            </sc-if>
+          </div>
+
+          <div style="border:1px solid {{ t4Border }};background:#0A0810">
+            <div style="display:flex;gap:12px;align-items:center;padding:14px;border-bottom:1px solid rgba(246,245,255,.1);flex-wrap:wrap">
+              <span style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:11px;letter-spacing:.2em;color:{{ t4Color }}">TASK 04</span>
+              <span style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:16px;letter-spacing:.06em;color:#F6F5FF">Comment on the Pinned Post</span>
+              <span style="margin-left:auto;font-size:10px;letter-spacing:.2em;color:{{ t4Color }}">{{ t4Status }}</span>
+            </div>
+            <sc-if value="{{ t4Open }}" hint-placeholder-val="{{ false }}">
+              <div style="padding:18px;display:flex;flex-direction:column;gap:14px">
+                <div style="border:1px solid #FF1F3D;background:rgba(255,31,61,.1);padding:16px">
+                  <div style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:15px;letter-spacing:.06em;color:#FF1F3D;margin-bottom:8px">TAG 3 FRIENDS</div>
+                  <p style="margin:0;font-size:14px;line-height:1.8;color:#F6F5FF">Tag 3 friends and tell them something about Ink Punk in your comment on the pinned post.</p>
+                </div>
+                <button type="button" onClick="{{ onComment }}" style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:13px;letter-spacing:.18em;background:#8A2BE2;color:#F6F5FF;border:1px solid #8A2BE2;padding:14px 20px;cursor:pointer;min-height:48px;align-self:flex-start">OPEN PINNED POST ↗</button>
+                <label for="cl-comment" style="font-size:13px;letter-spacing:.16em;color:#FFE800">COMMENT LINK</label>
+                <input id="cl-comment" type="url" autoComplete="off" spellCheck="false" placeholder="Paste your X comment link" value="{{ commentLink }}" onChange="{{ onCommentLink }}" style="background:#07060A;border:1px solid rgba(246,245,255,.28);color:#F6F5FF;font-size:14px;padding:14px;min-height:48px;outline:none;width:100%;word-break:break-all" style-focus="border-color:#FF1F3D" />
+                <button type="button" onClick="{{ onVerify4 }}" disabled="{{ verify4Disabled }}" style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:13px;letter-spacing:.18em;background:{{ verify4Bg }};color:{{ verify4Fg }};border:1px solid {{ verify4Bg }};padding:14px 20px;cursor:{{ verify4Cursor }};min-height:48px;align-self:flex-start">VERIFY COMMENT</button>
+                <sc-if value="{{ v4 }}" hint-placeholder-val="{{ false }}">
+                  <div style="border:1px solid rgba(138,43,226,.6);background:rgba(138,43,226,.1);padding:14px">
+                    <div style="font-size:11px;letter-spacing:.2em;color:#8A2BE2;margin-bottom:10px">CHECKING LINK<span style="animation:ipCaret 1s steps(1) infinite">_</span></div>
+                    <div style="height:4px;background:rgba(246,245,255,.12)"><div style="height:4px;background:#FFE800;animation:ipBar 2s linear forwards"></div></div>
+                  </div>
+                </sc-if>
+                <p style="margin:0;font-size:11px;line-height:1.7;color:rgba(246,245,255,.45)">The link is checked for a valid Ink Punk pinned-post reply address. The content of the comment itself is not read by this website.</p>
+              </div>
+            </sc-if>
+          </div>
+
+          <div style="border:1px solid {{ idBorder }};background:#0A0810">
+            <div style="display:flex;gap:12px;align-items:center;padding:14px;border-bottom:1px solid rgba(246,245,255,.1);flex-wrap:wrap">
+              <span style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:11px;letter-spacing:.2em;color:{{ idColor }}">IDENTITY</span>
+              <span style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:16px;letter-spacing:.06em;color:#F6F5FF">Username &amp; EVM Wallet</span>
+              <span style="margin-left:auto;font-size:10px;letter-spacing:.2em;color:{{ idColor }}">{{ idStatus }}</span>
+            </div>
+            <sc-if value="{{ idOpen }}" hint-placeholder-val="{{ false }}">
+              <div style="padding:18px;display:flex;flex-direction:column;gap:14px">
+                <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;border:1px solid rgba(246,245,255,.16);padding:14px">
+                  <span style="font-size:10px;letter-spacing:.24em;color:rgba(246,245,255,.55)">X USERNAME</span>
+                  <span style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:16px;color:#FFE800">{{ handle }}</span>
+                </div>
+                <label for="cl-wallet" style="font-size:13px;letter-spacing:.16em;color:#FFE800">EVM WALLET ADDRESS</label>
+                <input id="cl-wallet" type="text" autoComplete="off" spellCheck="false" placeholder="0x0000000000000000000000000000000000000000" value="{{ wallet }}" onChange="{{ onWallet }}" style="background:#07060A;border:1px solid rgba(246,245,255,.28);color:#F6F5FF;font-size:14px;padding:14px;min-height:48px;outline:none;width:100%;word-break:break-all" style-focus="border-color:#FFE800" />
+                <button type="button" onClick="{{ onIdentity }}" disabled="{{ identityDisabled }}" style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:13px;letter-spacing:.18em;background:{{ identityBg }};color:{{ identityFg }};border:1px solid {{ identityBg }};padding:14px 20px;cursor:{{ identityCursor }};min-height:48px;align-self:flex-start">CONTINUE TO LICENCE</button>
+              </div>
+            </sc-if>
+          </div>
+
+          <div style="border:1px solid {{ t5Border }};background:#0A0810">
+            <div style="display:flex;gap:12px;align-items:center;padding:14px;border-bottom:1px solid rgba(246,245,255,.1);flex-wrap:wrap">
+              <span style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:11px;letter-spacing:.2em;color:{{ t5Color }}">TASK 05</span>
+              <span style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:16px;letter-spacing:.06em;color:#F6F5FF">Generate your GTD Approved Licence</span>
+              <span style="margin-left:auto;font-size:10px;letter-spacing:.2em;color:{{ t5Color }}">{{ t5Status }}</span>
+            </div>
+            <sc-if value="{{ t5Open }}" hint-placeholder-val="{{ false }}">
+              <div style="padding:18px;display:flex;flex-direction:column;gap:20px">
+
+                <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px">
+                  <div style="display:flex;flex-direction:column;gap:10px">
+                    <div style="font-size:10px;letter-spacing:.24em;color:#FFE800">SIGN HERE</div>
+                    <div style="border:1px solid rgba(246,245,255,.3);background:#F6F5FF;position:relative">
+                      <canvas ref="{{ sigRef }}" width="1000" height="300" style="display:block;width:100%;height:auto;cursor:crosshair"></canvas>
+                    </div>
+                    <div style="display:flex;gap:10px;flex-wrap:wrap">
+                      <button type="button" onClick="{{ onClearSig }}" style="font-family:'Chakra Petch',sans-serif;font-weight:600;font-size:12px;letter-spacing:.16em;background:transparent;color:#F6F5FF;border:1px solid rgba(246,245,255,.4);padding:12px 16px;cursor:pointer;min-height:44px">CLEAR</button>
+                      <span style="font-size:11px;color:rgba(246,245,255,.5);align-self:center">{{ sigNote }}</span>
+                    </div>
+                  </div>
+
+                  <div style="display:flex;flex-direction:column;gap:10px">
+                    <div style="font-size:10px;letter-spacing:.24em;color:#FFE800">CARD IMAGE</div>
+                    <div style="border:1px dashed rgba(246,245,255,.3);background:#07060A;aspect-ratio:1/1;display:grid;place-items:center;overflow:hidden;max-width:220px">
+                      <sc-if value="{{ hasPhoto }}" hint-placeholder-val="{{ false }}">
+                        <div style="width:100%;height:100%;background-image:{{ photoBg }};background-size:cover;background-position:center"></div>
+                      </sc-if>
+                      <sc-if value="{{ noPhoto }}" hint-placeholder-val="{{ true }}">
+                        <span style="font-size:11px;letter-spacing:.16em;color:rgba(246,245,255,.4);text-align:center;padding:12px;line-height:1.7">NO UPLOAD —<br />A GALLERY<br />ARTWORK<br />WILL BE USED</span>
+                      </sc-if>
+                    </div>
+                    <label for="cl-photo" style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:12px;letter-spacing:.16em;background:transparent;color:#FFE800;border:1px solid #FFE800;padding:12px 16px;cursor:pointer;min-height:44px;display:flex;align-items:center;justify-content:center;max-width:220px">UPLOAD YOUR PHOTO</label>
+                    <input id="cl-photo" type="file" accept="image/*" onChange="{{ onPhoto }}" style="position:absolute;width:1px;height:1px;opacity:0;overflow:hidden" />
+                    <p style="margin:0;font-size:11px;line-height:1.7;color:rgba(246,245,255,.45);max-width:220px">Optional. Upload an image and it is cropped to fit the licence frame and used on the card only — otherwise one of the 20 Ink Punk gallery artworks is placed there.</p>
+                  </div>
+                </div>
+
+                <button type="button" onClick="{{ onGenerate }}" disabled="{{ generateDisabled }}" style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:14px;letter-spacing:.2em;background:{{ generateBg }};color:{{ generateFg }};border:1px solid {{ generateBg }};padding:16px 22px;cursor:{{ generateCursor }};min-height:52px;align-self:flex-start;display:flex;align-items:center;gap:10px">
+                  <sc-if value="{{ generating }}" hint-placeholder-val="{{ false }}">
+                    <span style="width:14px;height:14px;border:2px solid rgba(7,6,10,.35);border-top-color:#07060A;border-radius:50%;display:block;animation:ipSpin .8s linear infinite"></span>
+                  </sc-if>
+                  {{ generateLabel }}
+                </button>
+              </div>
+            </sc-if>
+          </div>
+
+          <sc-if value="{{ hasCard }}" hint-placeholder-val="{{ false }}">
+            <div style="border:1px solid #FFE800;background:#0A0810;padding:18px;display:flex;flex-direction:column;gap:18px">
+              <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center">
+                <span style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:11px;letter-spacing:.2em;color:#FFE800">YOUR LICENCE</span>
+                <span style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:22px;letter-spacing:.1em;color:#F6F5FF">{{ gtdLabel }}</span>
+              </div>
+              <canvas ref="{{ cardRef }}" width="1600" height="1000" style="display:block;width:100%;height:auto;border:1px solid rgba(246,245,255,.2)"></canvas>
+              <div style="display:flex;gap:10px;flex-wrap:wrap">
+                <button type="button" onClick="{{ onDownload }}" style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:13px;letter-spacing:.18em;background:#FFE800;color:#07060A;border:1px solid #FFE800;padding:14px 20px;cursor:pointer;min-height:48px">DOWNLOAD GTD LICENCE</button>
+                <a href="{{ shareUrl }}" target="_blank" rel="noopener" style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:13px;letter-spacing:.18em;background:#8A2BE2;color:#F6F5FF;border:1px solid #8A2BE2;padding:14px 20px;min-height:48px;display:flex;align-items:center">SHARE ON X ↗</a>
+              </div>
+              <div style="border:1px solid rgba(255,122,0,.5);background:rgba(255,122,0,.07);padding:16px;font-size:13px;line-height:1.8;color:#F6F5FF">
+                Download your licence, post it on X, tag <strong style="color:#FFE800">@ink_punk_</strong> and include the mint link <span style="color:#FFE800;word-break:break-all">https://opensea.io/collection/inkpunk-/overview</span>. Then paste the link to your post below to finish the claim.
+              </div>
+              <label for="cl-post" style="font-size:13px;letter-spacing:.16em;color:#FFE800">PASTE YOUR X POST LINK</label>
+              <input id="cl-post" type="url" autoComplete="off" spellCheck="false" placeholder="https://x.com/yourname/status/1234567890" value="{{ postLink }}" onChange="{{ onPostLink }}" style="background:#07060A;border:1px solid rgba(246,245,255,.28);color:#F6F5FF;font-size:14px;padding:14px;min-height:48px;outline:none;width:100%;word-break:break-all" style-focus="border-color:#FFE800" />
+              <button type="button" onClick="{{ onVerifyPost }}" disabled="{{ postDisabled }}" style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:13px;letter-spacing:.18em;background:{{ postBg }};color:{{ postFg }};border:1px solid {{ postBg }};padding:14px 20px;cursor:{{ postCursor }};min-height:48px;align-self:flex-start;display:flex;align-items:center;gap:10px">
+                <sc-if value="{{ posting }}" hint-placeholder-val="{{ false }}">
+                  <span style="width:14px;height:14px;border:2px solid rgba(7,6,10,.35);border-top-color:#07060A;border-radius:50%;display:block;animation:ipSpin .8s linear infinite"></span>
+                </sc-if>
+                VERIFY POST
+              </button>
+            </div>
+          </sc-if>
+
+          <sc-if value="{{ hasError }}" hint-placeholder-val="{{ false }}">
+            <div style="border:1px solid #FF1F3D;background:rgba(255,31,61,.12);color:#FF6B80;padding:16px;font-size:13px;line-height:1.7">{{ error }}</div>
+          </sc-if>
+        </div>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ showSuccess }}" hint-placeholder-val="{{ false }}">
+      <div style="border:1px solid #FFE800;background:#0A0810;position:relative;overflow:hidden;padding:clamp(24px,5vw,52px);text-align:center">
+        <div style="position:absolute;left:0;right:0;height:120px;pointer-events:none;opacity:.3;background:linear-gradient(180deg,transparent,rgba(255,232,0,.35),transparent);animation:ipScan 6s linear infinite"></div>
+        <div style="position:relative;width:96px;height:96px;margin:0 auto 24px;display:grid;place-items:center">
+          <span style="position:absolute;inset:0;border:2px solid #FFE800;animation:ipBurst 2.2s ease-out infinite"></span>
+          <span style="position:absolute;inset:0;border:2px solid #8A2BE2;animation:ipBurst 2.2s ease-out .7s infinite"></span>
+          <span style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:44px;color:#FFE800">✓</span>
+        </div>
+        <h2 style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:clamp(30px,6vw,54px);letter-spacing:.04em;margin:0 0 12px;color:#F6F5FF;text-shadow:3px 0 0 rgba(138,43,226,.8),-3px 0 0 rgba(255,31,61,.5);animation:ipShiftR 7s infinite steps(1)">CONGRATULATIONS</h2>
+        <div style="display:inline-flex;font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:clamp(18px,3.6vw,28px);letter-spacing:.18em;color:#07060A;background:#FFE800;padding:10px 22px;margin-bottom:18px">GTD ACCESS APPROVED</div>
+        <div style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:clamp(22px,4vw,34px);letter-spacing:.14em;color:#8A2BE2;margin-bottom:18px">{{ gtdLabel }}</div>
+        <p style="font-size:15px;line-height:1.8;color:rgba(246,245,255,.85);margin:0 auto 20px;max-width:54ch;text-wrap:pretty">You are one of the first 1,000 qualified participants and your Guaranteed Access spot has been successfully secured.</p>
+        <div style="border:1px solid rgba(255,122,0,.6);background:rgba(255,122,0,.08);padding:18px;max-width:54ch;margin:0 auto 20px">
+          <div style="font-size:10px;letter-spacing:.24em;color:#FF7A00;margin-bottom:10px">MINT</div>
+          <p style="margin:0;font-size:14px;line-height:1.8;color:#F6F5FF">Your mint date is 24 August 2026 at 13:30 UTC. Follow Ink Punk on X and keep notifications enabled so you don't miss the announcement.</p>
+        </div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center">
+          <a href="https://opensea.io/collection/inkpunk-/overview" target="_blank" rel="noopener" style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:13px;letter-spacing:.16em;background:#FFE800;color:#07060A;padding:16px 22px;min-height:52px;display:flex;align-items:center" style-hover="background:#FF7A00">MINT ON OPENSEA ↗</a>
+          <a href="https://x.com/ink_punk_" target="_blank" rel="noopener" style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:13px;letter-spacing:.16em;background:transparent;color:#FFE800;border:1px solid #FFE800;padding:16px 22px;min-height:52px;display:flex;align-items:center">FOLLOW ON X ↗</a>
+          <button type="button" onClick="{{ onDownload }}" style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:13px;letter-spacing:.16em;background:transparent;color:#F6F5FF;border:1px solid rgba(246,245,255,.4);padding:16px 22px;min-height:52px;cursor:pointer">DOWNLOAD LICENCE</button>
+        </div>
+      </div>
+    </sc-if>
+  </main>
+
+  <footer style="border-top:1px solid rgba(138,43,226,.5);background:#0A0810">
+    <div style="max-width:1080px;margin:0 auto;padding:26px 20px;display:flex;flex-wrap:wrap;gap:18px;justify-content:space-between;font-size:12px;color:rgba(246,245,255,.6)">
+      <div style="line-height:1.9">INK PUNK<br />2,000 NFTs · Ink Chain</div>
+      <div style="display:flex;gap:20px;align-items:center;flex-wrap:wrap">
+        <a href="../">Home</a>
+        <a href="../whitelist/">Whitelist</a>
+        <a href="../roadmap/">Roadmap</a>
+        <a href="https://x.com/ink_punk_" target="_blank" rel="noopener">Official X</a>
+      </div>
+    </div>
+  </footer>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{}">
+const X_POST_RE = /^https?:\/\/(www\.)?(x|twitter)\.com\/[A-Za-z0-9_]{1,20}\/status\/(\d{5,})/i;
+const WALLET_RE = /^0x[a-fA-F0-9]{40}$/;
+const VERIFY_MS = 2000;
+const CLAIM_ID_KEY = "inkpunk_claim_id";   // the one and only Claim ID key
+const CLAIM_DATA_KEY = "inkpunk_claim_data"; // form values only, never an id
+
+// Gallery artwork library — also the fallback image for the licence card.
+const ART = Array.from({ length: 20 }, (_, i) => "../assets/art-" + String(i + 1).padStart(2, "0") + ".jpg");
+
+// Public licence identifier: random, never derived from the internal spot number.
+const ID_CHARS = "ABCDEFGHJKLMNPQRSTUVWXYZ0123456789";
+function makeLicenceId() {
+  const n = 6;
+  let out = "";
+  const buf = new Uint32Array(n);
+  if (window.crypto && window.crypto.getRandomValues) window.crypto.getRandomValues(buf);
+  for (let i = 0; i < n; i++) {
+    const r = buf[i] || Math.floor(Math.random() * 4294967296);
+    out += ID_CHARS[r % ID_CHARS.length];
+  }
+  return "iNKPUNK" + out;
+}
+
+// Code 128 (subset B) — real, scannable linear barcode.
+const C128 = ["212222","222122","222221","121223","121322","131222","122213","122312","132212","221213","221312","231212","112232","122132","122231","113222","123122","123221","223211","221132","221231","213212","223112","312131","311222","321122","321221","312212","322112","322211","212123","212321","232121","111323","131123","131321","112313","132113","132311","211313","231113","231311","112133","112331","132131","113123","113321","133121","313121","211331","231131","213113","213311","213131","311123","311321","331121","312113","312311","332111","314111","221411","431111","111224","111422","121124","121421","141122","141221","112214","112412","122114","122411","142112","142211","241211","221114","413111","241112","134111","111242","121142","121241","114212","124112","124211","411212","421112","421211","212141","214121","412121","111143","111341","131141","114113","114311","411113","411311","113141","114131","311141","411131","211412","211214","211232","2331112"];
+function code128b(text) {
+  const codes = [104];
+  for (let i = 0; i < text.length; i++) {
+    const v = text.charCodeAt(i) - 32;
+    codes.push(v >= 0 && v < 95 ? v : 0);
+  }
+  let sum = 104;
+  for (let i = 1; i < codes.length; i++) sum += codes[i] * i;
+  codes.push(sum % 103, 106);
+  // widths -> module string, starting with a bar
+  let bars = [];
+  codes.forEach((c) => {
+    const p = C128[c];
+    for (let i = 0; i < p.length; i++) bars.push({ dark: i % 2 === 0, w: parseInt(p[i], 10) });
+  });
+  return bars;
+}
+
+const STEPS = ["1", "2", "3", "4", "identity", "card", "done"];
+const stepIndex = (s) => STEPS.indexOf(String(s));
+
+class Component extends DCLogic {
+  state = {
+    phase: "boot",       // boot | gate | flow | invalid | offline
+    starting: false,
+    step: "1",
+    username: "",
+    commentLink: "",
+    wallet: "",
+    postLink: "",
+    visited: {},
+    verifying: 0,
+    generating: false,
+    posting: false,
+    error: "",
+    claimId: "",
+    spot: 0,
+    claimed: null,
+    countState: "loading",
+    exhausted: false,
+    hasSignature: false,
+    photoSrc: "",
+    licenceId: "",
+  };
+
+  async componentDidMount() {
+    try { this._cfg = await import("../config.js"); } catch (e) { this._cfg = {}; }
+    this._loadCount();
+    this._countTimer = setInterval(() => this._loadCount(), 60000);
+    this._boot();
+  }
+
+  componentWillUnmount() {
+    clearInterval(this._countTimer);
+    clearTimeout(this._vt);
+  }
+
+  cfg(k, d) { return (this._cfg && this._cfg[k]) || d; }
+  endpoint() { return this.cfg("CLAIM_ENDPOINT", ""); }
+
+  /* ---------------------------------------------------------- backend */
+
+  /** POST to the claim service. Throws only for network/transport failures. */
+  async _api(params) {
+    const url = this.endpoint();
+    if (!url) { const e = new Error("offline"); e.offline = true; throw e; }
+    let res;
+    try {
+      res = await fetch(url, { method: "POST", body: new URLSearchParams(params) });
+    } catch (err) {
+      const e = new Error("offline"); e.offline = true; throw e;
+    }
+    try {
+      return await res.json();
+    } catch (err) {
+      const e = new Error("offline"); e.offline = true; throw e;
+    }
+  }
+
+  /** A backend reply that means "this Claim ID is unknown". */
+  _isInvalidSession(d) {
+    if (!d || d.success) return false;
+    if (d.invalidSession) return true;
+    return /not recognised|not recognized/i.test(String(d.message || ""));
+  }
+
+  _goInvalid() {
+    try { localStorage.removeItem(CLAIM_ID_KEY); } catch (e) {}
+    this.setState({ phase: "invalid", error: "" });
+  }
+
+  _goOffline() {
+    this.setState({ phase: "offline", error: "" });
+  }
+
+  /** Single place that decides which failure the user is looking at. */
+  _handleFailure(err, d, fallback) {
+    if (err && err.offline) { this._goOffline(); return; }
+    if (this._isInvalidSession(d)) { this._goInvalid(); return; }
+    this.setState({ error: (d && d.message) || fallback });
+  }
+
+  async _loadCount() {
+    const url = this.endpoint();
+    if (!url) { this.setState({ countState: "unavailable" }); return; }
+    try {
+      const res = await fetch(url + "?action=count");
+      const d = await res.json();
+      if (d && d.success) {
+        this.setState({
+          claimed: d.claimed,
+          countState: "ready",
+          exhausted: this.state.step !== "done" && d.remaining <= 0 && !this.state.spot,
+        });
+      } else {
+        this.setState({ countState: "unavailable" });
+      }
+    } catch (e) {
+      this.setState({ countState: "unavailable" });
+    }
+  }
+
+  _stored(key) {
+    try { return localStorage.getItem(key) || ""; } catch (e) { return ""; }
+  }
+
+  /** On load: recover an existing session, or show the START CLAIM gate. */
+  async _boot() {
+    const claimId = this._stored(CLAIM_ID_KEY);
+    let data = {};
+    try { data = JSON.parse(this._stored(CLAIM_DATA_KEY) || "{}") || {}; } catch (e) {}
+
+    if (!claimId) { this.setState({ phase: "gate" }); return; }
+
+    this.setState({
+      claimId,
+      username: data.username || "",
+      commentLink: data.commentLink || "",
+      wallet: data.wallet || "",
+      licenceId: data.licenceId || "",
+    });
+
+    const url = this.endpoint();
+    if (!url) { this._goOffline(); return; }
+
+    try {
+      const res = await fetch(url + "?action=status&claimId=" + encodeURIComponent(claimId));
+      const d = await res.json();
+      if (!d || !d.success) { this._goInvalid(); return; }
+      const map = {
+        STARTED: "1", FOLLOW_COMPLETED: "2", LIKE_COMPLETED: "3", REPOST_COMPLETED: "4",
+        COMMENT_COMPLETED: "identity", IDENTITY_COMPLETED: "card",
+        CARD_GENERATED: "card", POST_SUBMITTED: "card", QUALIFIED: "done",
+      };
+      this.setState({
+        phase: "flow",
+        step: map[d.state] || "1",
+        spot: d.spotNumber || 0,
+        // a session that already holds a spot keeps its licence id
+        licenceId: d.spotNumber ? (data.licenceId || makeLicenceId()) : "",
+      }, () => this._persist());
+    } catch (e) {
+      this._goOffline();
+    }
+  }
+
+  /** The ONLY place a Claim ID is created. Server-side, once per session. */
+  _startClaim = async () => {
+    if (this.state.starting) return;
+    this.setState({ starting: true, error: "" });
+    try {
+      const d = await this._api({ action: "start" });
+      if (!d || !d.success || !d.claimId) {
+        this.setState({ starting: false });
+        this._handleFailure(null, d, "A claim session could not be started. Please try again.");
+        return;
+      }
+      try { localStorage.setItem(CLAIM_ID_KEY, d.claimId); } catch (e) {}
+      this.setState({ starting: false, phase: "flow", step: "1", claimId: d.claimId, spot: 0, licenceId: "" }, () => this._persist());
+    } catch (err) {
+      this.setState({ starting: false });
+      this._handleFailure(err, null, "A claim session could not be started. Please try again.");
+    }
+  };
+
+  /** Clears the dead session and returns to the gate. */
+  _restart = () => {
+    try { localStorage.removeItem(CLAIM_ID_KEY); localStorage.removeItem(CLAIM_DATA_KEY); } catch (e) {}
+    this.setState({
+      phase: "gate", step: "1", claimId: "", spot: 0, licenceId: "",
+      username: "", commentLink: "", wallet: "", postLink: "",
+      visited: {}, error: "", hasSignature: false, photoSrc: "",
+    });
+  };
+
+  _retry = () => {
+    this.setState({ phase: "boot", error: "" }, () => { this._loadCount(); this._boot(); });
+  };
+
+  /** Form values only — the Claim ID lives under its own key. */
+  _persist(extra) {
+    const s = Object.assign({
+      username: this.state.username,
+      commentLink: this.state.commentLink,
+      wallet: this.state.wallet,
+      licenceId: this.state.licenceId,
+    }, extra || {});
+    try { localStorage.setItem(CLAIM_DATA_KEY, JSON.stringify(s)); } catch (e) {}
+  }
+
+  /** Progress update on the EXISTING session. Never creates one. */
+  async _recordState(name, extra) {
+    const claimId = this.state.claimId;
+    if (!claimId) { this._goInvalid(); return; }
+    try {
+      const d = await this._api(Object.assign({ action: "state", claimId, state: name }, extra || {}));
+      if (this._isInvalidSession(d)) { this._goInvalid(); return; }
+    } catch (err) {
+      if (err && err.offline) this._goOffline();
+    }
+  }
+
+  /* ---------------------------------------------------------- task flow */
+
+  _open(url, key) {
+    window.open(url, "_blank", "noopener");
+    this.setState((s) => ({ visited: Object.assign({}, s.visited, { [key]: true }), error: "" }));
+  }
+
+  _pinned() {
+    return this.cfg("X_PINNED_POST_URL", "") || this.cfg("X_ACCOUNT_URL", "https://x.com/ink_punk_");
+  }
+
+  _follow = () => {
+    if (!this.state.username.trim()) {
+      this.setState({ error: "Please enter your X username before continuing." });
+      return;
+    }
+    this._open(this.cfg("X_ACCOUNT_URL", "https://x.com/ink_punk_"), 1);
+  };
+
+  _verify(task, next, stateName, validate) {
+    if (this.state.verifying) return;
+    if (validate) {
+      const msg = validate();
+      if (msg) { this.setState({ error: msg }); return; }
+    }
+    this.setState({ verifying: task, error: "" });
+    this._vt = setTimeout(() => {
+      this.setState({ verifying: 0, step: next });
+      this._persist();
+      const extra = {};
+      if (task === 1) extra.username = this.state.username.trim();
+      if (task === 4) extra.comment = this.state.commentLink.trim();
+      this._recordState(stateName, extra);
+    }, VERIFY_MS);
+  }
+
+  _identity = () => {
+    const w = this.state.wallet.trim();
+    if (!WALLET_RE.test(w)) {
+      this.setState({ error: "That does not look like a valid EVM wallet address. It should start with 0x followed by 40 characters." });
+      return;
+    }
+    this.setState({ step: "card", error: "" });
+    this._persist();
+    this._recordState("IDENTITY_COMPLETED", { wallet: w, username: this.state.username.trim(), comment: this.state.commentLink.trim() });
+  };
+
+  /* ---------------------------------------------------------- signature */
+
+  _sigRef = (el) => {
+    if (!el || el === this._sig) return;
+    this._sig = el;
+    const ctx = el.getContext("2d");
+    ctx.fillStyle = "#F6F5FF";
+    ctx.fillRect(0, 0, el.width, el.height);
+    ctx.strokeStyle = "#07060A";
+    ctx.lineWidth = 5;
+    ctx.lineCap = "round";
+    ctx.lineJoin = "round";
+    let drawing = false;
+    const pos = (e) => {
+      const r = el.getBoundingClientRect();
+      return { x: (e.clientX - r.left) * (el.width / r.width), y: (e.clientY - r.top) * (el.height / r.height) };
+    };
+    el.addEventListener("pointerdown", (e) => {
+      drawing = true;
+      el.setPointerCapture(e.pointerId);
+      const p = pos(e);
+      ctx.beginPath();
+      ctx.moveTo(p.x, p.y);
+      e.preventDefault();
+    });
+    el.addEventListener("pointermove", (e) => {
+      if (!drawing) return;
+      const p = pos(e);
+      ctx.lineTo(p.x, p.y);
+      ctx.stroke();
+      if (!this.state.hasSignature) this.setState({ hasSignature: true });
+      e.preventDefault();
+    });
+    const end = () => { drawing = false; };
+    el.addEventListener("pointerup", end);
+    el.addEventListener("pointerleave", end);
+    el.addEventListener("pointercancel", end);
+  };
+
+  _clearSig = () => {
+    const el = this._sig;
+    if (!el) return;
+    const ctx = el.getContext("2d");
+    ctx.fillStyle = "#F6F5FF";
+    ctx.fillRect(0, 0, el.width, el.height);
+    this.setState({ hasSignature: false });
+  };
+
+  _photo = (e) => {
+    const file = e.target.files && e.target.files[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = () => {
+      const img = new Image();
+      img.onload = () => { this._photoImg = img; this.setState({ photoSrc: String(reader.result), error: "" }); };
+      img.src = String(reader.result);
+    };
+    reader.readAsDataURL(file);
+  };
+
+  /* ---------------------------------------------------------- card */
+
+  _generate = async () => {
+    if (this.state.generating) return;
+    if (!this.state.hasSignature) { this.setState({ error: "Please sign in the signature box before generating your licence." }); return; }
+    if (!this.state.claimId) { this._goInvalid(); return; }
+    if (!this.endpoint()) { this._goOffline(); return; }
+
+    this.setState({ generating: true, error: "" });
+    try {
+      const d = await this._api({
+        action: "finalize",
+        claimId: this.state.claimId,
+        username: this.state.username.trim(),
+        comment: this.state.commentLink.trim(),
+        wallet: this.state.wallet.trim(),
+      });
+      if (d && d.exhausted) {
+        this.setState({ generating: false, exhausted: true });
+        return;
+      }
+      if (!d || !d.success || !d.spotNumber) {
+        this.setState({ generating: false });
+        this._handleFailure(null, d, "Your licence could not be issued. Please try again.");
+        return;
+      }
+      const licenceId = this.state.licenceId || makeLicenceId();
+      this.setState({ generating: false, spot: d.spotNumber, licenceId });
+      this._persist({ licenceId });
+      this._loadCount();
+      setTimeout(() => this._drawCard(), 60);
+    } catch (err) {
+      this.setState({ generating: false });
+      this._handleFailure(err, null, "Your licence could not be issued. Please try again.");
+    }
+  };
+
+  _cardRef = (el) => {
+    if (!el || el === this._card) return;
+    this._card = el;
+    if (this.state.spot) setTimeout(() => this._drawCard(), 30);
+  };
+
+  _mask(w) {
+    const v = (w || "").trim();
+    if (v.length < 8) return v;
+    return v.slice(0, 3) + "..." + v.slice(-4);
+  }
+
+  _pad4(n) { return ("000" + n).slice(-4); }
+
+  async _fallbackArt() {
+    if (this._fallbackImg) return this._fallbackImg;
+    if (this._fallbackIndex === undefined) this._fallbackIndex = Math.floor(Math.random() * ART.length);
+    const img = await new Promise((resolve) => {
+      const im = new Image();
+      im.onload = () => resolve(im);
+      im.onerror = () => resolve(null);
+      im.src = ART[this._fallbackIndex];
+    });
+    this._fallbackImg = img;
+    return img;
+  }
+
+  _drawBarcode(ctx, text, x, y, w, h) {
+    const bars = code128b(text);
+    const modules = bars.reduce((n, b) => n + b.w, 0);
+    const quiet = 10;
+    const unit = w / (modules + quiet * 2);
+    ctx.fillStyle = "#F6F5FF";
+    ctx.fillRect(x, y, w, h + 34);
+    ctx.fillStyle = "#07060A";
+    let cx = x + quiet * unit;
+    bars.forEach((b) => {
+      const bw = b.w * unit;
+      if (b.dark) ctx.fillRect(cx, y + 8, Math.ceil(bw), h - 16);
+      cx += bw;
+    });
+    ctx.font = '600 17px "IBM Plex Mono", monospace';
+    ctx.fillStyle = "#07060A";
+    const label = text.toUpperCase();
+    ctx.fillText(label, x + (w - ctx.measureText(label).width) / 2, y + h + 22);
+  }
+
+  _drawSeal(ctx, cx, cy, r) {
+    const BLACK = "#07060A", WHITE = "#F6F5FF", YELLOW = "#FFE800";
+    // rainbow spectrum wedges
+    ctx.save();
+    ctx.beginPath(); ctx.arc(cx, cy, r, 0, Math.PI * 2); ctx.clip();
+    const wedges = 16;
+    for (let i = 0; i < wedges; i++) {
+      const a0 = (i / wedges) * Math.PI * 2 - Math.PI / 2;
+      const a1 = ((i + 1) / wedges) * Math.PI * 2 - Math.PI / 2;
+      ctx.beginPath();
+      ctx.moveTo(cx, cy);
+      ctx.arc(cx, cy, r, a0, a1);
+      ctx.closePath();
+      ctx.fillStyle = "hsl(" + Math.round((i / wedges) * 360) + ", 95%, 58%)";
+      ctx.fill();
+    }
+    // pixel glitch band
+    ctx.globalAlpha = 0.5;
+    for (let i = 0; i < 26; i++) {
+      ctx.fillStyle = i % 2 ? WHITE : BLACK;
+      ctx.fillRect(cx - r + i * 12, cy - r + 22, 10, 10);
+      ctx.fillRect(cx - r + i * 12, cy + r - 32, 10, 10);
+    }
+    ctx.globalAlpha = 1;
+    // glossy highlight
+    const g = ctx.createRadialGradient(cx - r * 0.4, cy - r * 0.55, 8, cx - r * 0.2, cy - r * 0.3, r * 1.25);
+    g.addColorStop(0, "rgba(255,255,255,.75)");
+    g.addColorStop(0.45, "rgba(255,255,255,.12)");
+    g.addColorStop(1, "rgba(255,255,255,0)");
+    ctx.fillStyle = g;
+    ctx.beginPath(); ctx.arc(cx, cy, r, 0, Math.PI * 2); ctx.fill();
+    ctx.restore();
+
+    ctx.strokeStyle = BLACK; ctx.lineWidth = 13;
+    ctx.beginPath(); ctx.arc(cx, cy, r - 2, 0, Math.PI * 2); ctx.stroke();
+    ctx.lineWidth = 4;
+    ctx.beginPath(); ctx.arc(cx, cy, r - 22, 0, Math.PI * 2); ctx.stroke();
+
+    ctx.fillStyle = BLACK;
+    ctx.fillRect(cx - r + 12, cy - 44, (r - 12) * 2, 90);
+    ctx.font = '700 30px "Chakra Petch", sans-serif';
+    ctx.fillStyle = WHITE;
+    ctx.fillText("INK PUNK", cx - ctx.measureText("INK PUNK").width / 2, cy - 10);
+    ctx.font = '700 34px "Chakra Petch", sans-serif';
+    ctx.fillStyle = YELLOW;
+    ctx.fillText("APPROVED", cx - ctx.measureText("APPROVED").width / 2, cy + 32);
+  }
+
+  async _drawCard() {
+    const cv = this._card;
+    if (!cv || !this.state.spot) return;
+    const ctx = cv.getContext("2d");
+    const W = cv.width, H = cv.height;
+    const BLACK = "#07060A", VIOLET = "#8A2BE2", YELLOW = "#FFE800", WHITE = "#F6F5FF";
+
+    try { await document.fonts.load('700 66px "Chakra Petch"'); await document.fonts.load('600 24px "IBM Plex Mono"'); } catch (e) {}
+    const chakra = (s) => '700 ' + s + 'px "Chakra Petch", sans-serif';
+    const mono = (s, w) => (w || 500) + ' ' + s + 'px "IBM Plex Mono", monospace';
+
+    ctx.clearRect(0, 0, W, H);
+    ctx.fillStyle = BLACK; ctx.fillRect(0, 0, W, H);
+    ctx.fillStyle = VIOLET; ctx.fillRect(26, 26, W - 52, H - 52);
+
+    const blocks = [YELLOW, "#FF1F3D", "#FF7A00", WHITE];
+    for (let i = 0; i < 22; i++) {
+      ctx.fillStyle = blocks[i % blocks.length];
+      ctx.globalAlpha = 0.9;
+      ctx.fillRect(26 + i * 18, 26, 14, 14);
+      ctx.fillRect(W - 40 - i * 18, H - 40, 14, 14);
+    }
+    ctx.globalAlpha = 1;
+    ctx.strokeStyle = BLACK; ctx.lineWidth = 10;
+    ctx.strokeRect(56, 56, W - 112, H - 112);
+
+    ctx.globalAlpha = 0.2;
+    ctx.fillStyle = "#FF1F3D"; ctx.fillRect(56, 214, W - 112, 8);
+    ctx.fillStyle = YELLOW; ctx.fillRect(56, 226, 460, 5);
+    ctx.globalAlpha = 1;
+
+    // header
+    ctx.fillStyle = BLACK;
+    ctx.font = mono(23, 600);
+    ctx.fillText("INK PUNK · INK CHAIN · 2,000 NFTS", 90, 120);
+    ctx.font = chakra(62);
+    ctx.fillText("LICENCE OF INK PUNK GTD", 90, 190);
+
+    // licence id plate
+    const licence = this.state.licenceId || makeLicenceId();
+    ctx.fillStyle = BLACK; ctx.fillRect(1090, 74, 440, 112);
+    ctx.font = mono(18, 600); ctx.fillStyle = "rgba(246,245,255,.7)";
+    ctx.fillText("LICENCE ID", 1112, 108);
+    ctx.font = chakra(40); ctx.fillStyle = YELLOW;
+    ctx.fillText(licence, 1112, 158);
+
+    // left: artwork frame
+    const fx = 90, fy = 252, fw = 400, fh = 372;
+    ctx.fillStyle = BLACK; ctx.fillRect(fx, fy, fw, fh);
+    let img = this._photoImg;
+    if (!img) img = await this._fallbackArt();
+    if (img) {
+      const iw = fw - 24, ih = fh - 24, fr = iw / ih, ir = img.width / img.height;
+      let sw = img.width, sh = img.height, sx = 0, sy = 0;
+      if (ir > fr) { sw = img.height * fr; sx = (img.width - sw) / 2; }
+      else { sh = img.width / fr; sy = (img.height - sh) / 2; }
+      ctx.drawImage(img, sx, sy, sw, sh, fx + 12, fy + 12, iw, ih);
+    } else {
+      ctx.fillStyle = VIOLET; ctx.fillRect(fx + 12, fy + 12, fw - 24, fh - 24);
+    }
+
+    // left: dedicated signature area under the artwork
+    const sax = 90, say = 654, saw = 400, sah = 214;
+    ctx.fillStyle = "rgba(7,6,10,.16)"; ctx.fillRect(sax, say, saw, sah);
+    ctx.strokeStyle = BLACK; ctx.lineWidth = 4;
+    ctx.strokeRect(sax, say, saw, sah);
+    ctx.fillStyle = BLACK; ctx.font = mono(18, 600);
+    ctx.fillText("SIGNATURE OF HOLDER", sax + 16, say + 32);
+    const sig = this._sig;
+    if (sig) {
+      const tmp = document.createElement("canvas");
+      tmp.width = sig.width; tmp.height = sig.height;
+      const tc = tmp.getContext("2d");
+      tc.drawImage(sig, 0, 0);
+      const data = tc.getImageData(0, 0, tmp.width, tmp.height);
+      for (let i = 0; i < data.data.length; i += 4) {
+        const lum = (data.data[i] + data.data[i + 1] + data.data[i + 2]) / 3;
+        data.data[i + 3] = lum > 200 ? 0 : 255;
+        data.data[i] = 7; data.data[i + 1] = 6; data.data[i + 2] = 10;
+      }
+      tc.putImageData(data, 0, 0);
+      ctx.drawImage(tmp, sax + 20, say + 44, saw - 40, 112);
+    }
+    ctx.fillStyle = BLACK; ctx.fillRect(sax + 20, say + 166, saw - 40, 4);
+
+    // centre: fields
+    const rows = [
+      ["ISSUED TO", "@" + this.state.username.trim().replace(/^@/, "")],
+      ["WALLET", this._mask(this.state.wallet)],
+      ["DATE OF ISSUE", this.cfg("GTD_ISSUE_DATE", "24 AUGUST 2026")],
+      ["MINT DATE", this.cfg("MINT_LABEL", "24 AUGUST 2026 — 13:30 UTC")],
+    ];
+    let ry = 300;
+    rows.forEach(([label, value]) => {
+      ctx.fillStyle = "rgba(7,6,10,.72)"; ctx.font = mono(21, 600);
+      ctx.fillText(label, 540, ry);
+      ctx.fillStyle = BLACK; ctx.font = chakra(38);
+      ctx.fillText(value, 540, ry + 46);
+      ry += 96;
+    });
+
+    // approval statement
+    ctx.fillStyle = BLACK; ctx.font = chakra(30);
+    ctx.fillText("GTD ACCESS APPROVED", 540, 700);
+    ctx.font = mono(21, 500);
+    const desc = "The holder has successfully completed the Ink Punk GTD process and is an approved Ink Punk GTD participant with Guaranteed Access.";
+    let line = "", ly = 738;
+    desc.split(" ").forEach((word) => {
+      const test = line ? line + " " + word : word;
+      if (ctx.measureText(test).width > 500) { ctx.fillText(line, 540, ly); line = word; ly += 30; }
+      else line = test;
+    });
+    if (line) ctx.fillText(line, 540, ly);
+
+    // right: rainbow approval seal
+    this._drawSeal(ctx, 1320, 402, 142);
+
+    // lower: real Code 128 barcode
+    this._drawBarcode(ctx, this.cfg("GTD_QR_TARGET", "https://inkpunk.xyz/whitelist"), 540, 862, 980, 74);
+  }
+
+  _download = () => {
+    const cv = this._card;
+    if (!cv) return;
+    cv.toBlob((blob) => {
+      if (!blob) return;
+      const a = document.createElement("a");
+      a.href = URL.createObjectURL(blob);
+      a.download = (this.state.licenceId || "inkpunk-gtd") + ".png";
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      setTimeout(() => URL.revokeObjectURL(a.href), 4000);
+    }, "image/png");
+  };
+
+  _verifyPost = async () => {
+    if (this.state.posting) return;
+    const link = this.state.postLink.trim();
+    if (!X_POST_RE.test(link)) {
+      this.setState({ error: "That is not a valid X post link. It should look like https://x.com/yourname/status/1234567890" });
+      return;
+    }
+    if (!this.state.claimId) { this._goInvalid(); return; }
+    this.setState({ posting: true, error: "" });
+    try {
+      const d = await this._api({ action: "qualify", claimId: this.state.claimId, socialPost: link });
+      if (d && d.success) {
+        this.setState({ posting: false, step: "done", spot: d.spotNumber || this.state.spot });
+        this._persist();
+        this._loadCount();
+        setTimeout(() => this._drawCard(), 80);
+      } else {
+        this.setState({ posting: false });
+        this._handleFailure(null, d, "Your post link could not be verified. Please try again.");
+      }
+    } catch (err) {
+      this.setState({ posting: false });
+      this._handleFailure(err, null, "Your post link could not be verified. Please try again.");
+    }
+  };
+
+  /* ---------------------------------------------------------- render */
+
+  renderVals() {
+    const s = this.state;
+    const cur = stepIndex(s.step);
+    const at = (k) => s.step === k;
+    const done = (k) => cur > stepIndex(k);
+
+    const YELLOW = "#FFE800", PURPLE = "#8A2BE2", DIM = "rgba(246,245,255,.35)";
+    const border = (k) => (at(k) ? YELLOW : done(k) ? "rgba(138,43,226,.6)" : "rgba(246,245,255,.14)");
+    const color = (k) => (at(k) ? YELLOW : done(k) ? PURPLE : DIM);
+    const status = (k) => (done(k) ? "COMPLETE ✓" : at(k) ? "IN PROGRESS" : "▮ LOCKED");
+
+    const chip = (label, k) => {
+      const d = done(k), a = at(k);
+      return {
+        label,
+        mark: d ? "✓" : a ? "●" : "▮",
+        border: d ? "rgba(138,43,226,.7)" : a ? YELLOW : "rgba(246,245,255,.14)",
+        bg: d ? "rgba(138,43,226,.14)" : a ? "rgba(255,232,0,.12)" : "transparent",
+        color: d ? PURPLE : a ? YELLOW : DIM,
+      };
+    };
+
+    const commentValid = X_POST_RE.test(s.commentLink.trim());
+    const walletValid = WALLET_RE.test(s.wallet.trim());
+    const followReady = !!s.username.trim();
+    const postValid = X_POST_RE.test(s.postLink.trim());
+    const handle = "@" + s.username.trim().replace(/^@/, "");
+
+    const shareText = "I just secured GTD ACCESS for Ink Punk — licence " + (s.licenceId || "") + ". 2,000 NFTs on Ink Chain. " + this.cfg("X_HANDLE", "@ink_punk_") + " " + this.cfg("OPENSEA_URL", "https://opensea.io/collection/inkpunk-/overview");
+
+    return {
+      progress: [
+        chip("TASK 01", "1"), chip("TASK 02", "2"), chip("TASK 03", "3"), chip("TASK 04", "4"),
+        chip("IDENTITY", "identity"), chip("TASK 05", "card"), chip("APPROVED", "done"),
+      ],
+      showBoot: s.phase === "boot",
+      showGate: s.phase === "gate",
+      showInvalid: s.phase === "invalid",
+      showOffline: s.phase === "offline",
+      onStartClaim: this._startClaim,
+      onRestart: this._restart,
+      onRetry: this._retry,
+      starting: s.starting,
+      startLabel: s.starting ? "STARTING" : "START CLAIM",
+      startBg: s.starting ? "rgba(255,232,0,.5)" : "#FFE800",
+      startCursor: s.starting ? "wait" : "pointer",
+      showFlow: s.phase === "flow" && !s.exhausted && s.step !== "done",
+      showSuccess: s.phase === "flow" && s.step === "done",
+      exhausted: s.phase === "flow" && s.exhausted && s.step !== "done",
+
+      claimedLabel: s.countState === "ready" ? s.claimed + " / 1000" : s.countState === "loading" ? "... / 1000" : "— / 1000",
+      countOpacity: s.countState === "loading" ? 0.5 : 1,
+      countNote: s.countState === "ready" ? "QUALIFIED CLAIMS" : s.countState === "loading" ? "READING CLAIM RECORDS" : "COUNT UNAVAILABLE",
+      countNoteColor: s.countState === "ready" ? "#FFE800" : "rgba(246,245,255,.45)",
+
+      username: s.username,
+      commentLink: s.commentLink,
+      wallet: s.wallet,
+      postLink: s.postLink,
+      handle,
+      onUsername: (e) => this.setState({ username: e.target.value, error: "" }),
+      onCommentLink: (e) => this.setState({ commentLink: e.target.value, error: "" }),
+      onWallet: (e) => this.setState({ wallet: e.target.value, error: "" }),
+      onPostLink: (e) => this.setState({ postLink: e.target.value, error: "" }),
+
+      t1Border: border("1"), t1Color: color("1"), t1Status: status("1"), t1Open: at("1"),
+      t2Border: border("2"), t2Color: color("2"), t2Status: status("2"), t2Open: at("2"),
+      t3Border: border("3"), t3Color: color("3"), t3Status: status("3"), t3Open: at("3"),
+      t4Border: border("4"), t4Color: color("4"), t4Status: status("4"), t4Open: at("4"),
+      idBorder: border("identity"), idColor: color("identity"), idStatus: status("identity"), idOpen: at("identity"),
+      t5Border: border("card"), t5Color: color("card"), t5Status: s.spot ? "ISSUED ✓" : status("card"), t5Open: at("card") && !s.spot,
+
+      t1Visited: !!s.visited[1], t2Visited: !!s.visited[2], t3Visited: !!s.visited[3],
+      verifying: s.verifying > 0,
+      v1: s.verifying === 1, v2: s.verifying === 2, v3: s.verifying === 3, v4: s.verifying === 4,
+
+      onFollow: this._follow,
+      followDisabled: !followReady,
+      followBg: followReady ? "#FFE800" : "rgba(246,245,255,.08)",
+      followFg: followReady ? "#07060A" : "rgba(246,245,255,.4)",
+      followCursor: followReady ? "pointer" : "not-allowed",
+      onLike: () => this._open(this._pinned(), 2),
+      onRepost: () => this._open(this._pinned(), 3),
+      onComment: () => this._open(this._pinned(), 4),
+
+      onVerify1: () => this._verify(1, "2", "FOLLOW_COMPLETED", () => (s.username.trim() ? "" : "Please enter your X username first.")),
+      onVerify2: () => this._verify(2, "3", "LIKE_COMPLETED"),
+      onVerify3: () => this._verify(3, "4", "REPOST_COMPLETED"),
+      onVerify4: () => this._verify(4, "identity", "COMMENT_COMPLETED", () => (X_POST_RE.test(this.state.commentLink.trim()) ? "" : "That link is not a valid X post address. It should look like https://x.com/username/status/1234567890")),
+      verify4Disabled: !s.commentLink.trim() || s.verifying === 4,
+      verify4Bg: s.commentLink.trim() ? (commentValid ? "#FFE800" : "#FF7A00") : "rgba(246,245,255,.08)",
+      verify4Fg: s.commentLink.trim() ? "#07060A" : "rgba(246,245,255,.4)",
+      verify4Cursor: s.commentLink.trim() ? "pointer" : "not-allowed",
+
+      onIdentity: this._identity,
+      identityDisabled: !walletValid,
+      identityBg: walletValid ? "#FFE800" : "rgba(246,245,255,.08)",
+      identityFg: walletValid ? "#07060A" : "rgba(246,245,255,.4)",
+      identityCursor: walletValid ? "pointer" : "not-allowed",
+
+      sigRef: this._sigRef,
+      onClearSig: this._clearSig,
+      sigNote: s.hasSignature ? "Signature captured." : "Draw your signature with a finger, stylus or mouse.",
+      onPhoto: this._photo,
+      photoBg: s.photoSrc ? 'url("' + s.photoSrc + '")' : "none",
+      hasPhoto: !!s.photoSrc,
+      noPhoto: !s.photoSrc,
+
+      onGenerate: this._generate,
+      generating: s.generating,
+      generateDisabled: s.generating || !s.hasSignature,
+      generateLabel: s.generating ? "ISSUING" : "GENERATE GTD LICENCE",
+      generateBg: s.hasSignature && !s.generating ? "#FFE800" : "rgba(246,245,255,.08)",
+      generateFg: s.hasSignature && !s.generating ? "#07060A" : "rgba(246,245,255,.4)",
+      generateCursor: s.hasSignature && !s.generating ? "pointer" : "not-allowed",
+
+      hasCard: !!s.spot,
+      cardRef: this._cardRef,
+      gtdLabel: s.licenceId || "iNKPUNK",
+      onDownload: this._download,
+      shareUrl: "https://x.com/intent/tweet?text=" + encodeURIComponent(shareText),
+
+      onVerifyPost: this._verifyPost,
+      posting: s.posting,
+      postDisabled: !s.postLink.trim() || s.posting,
+      postBg: s.postLink.trim() ? (postValid ? "#FFE800" : "#FF7A00") : "rgba(246,245,255,.08)",
+      postFg: s.postLink.trim() ? "#07060A" : "rgba(246,245,255,.4)",
+      postCursor: s.postLink.trim() ? "pointer" : "not-allowed",
+
+      hasError: !!s.error,
+      error: s.error,
+    };
+  }
+}
+</script>
+</body>
+</html>
