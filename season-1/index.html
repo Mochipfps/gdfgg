@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="canonical" href="https://inkpunk.xyz/season-1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ink Punk — Season 1</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+html, body { margin: 0; padding: 0; background: #07060A; overflow-x: hidden; }
+* { box-sizing: border-box; }
+a { color: #FFE800; text-decoration: none; }
+a:hover { color: #FF7A00; }
+::selection { background: #8A2BE2; color: #F6F5FF; }
+@keyframes ipScan { 0% { transform: translateY(-100%); } 100% { transform: translateY(100%); } }
+@keyframes ipShiftR { 0%, 92%, 100% { transform: translate(0,0); } 94% { transform: translate(-2px,1px); } 96% { transform: translate(2px,-1px); } }
+@keyframes ipCaret { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
+@keyframes ipPulse { 0%, 100% { opacity: .35; } 50% { opacity: 1; } }
+</style>
+</helmet>
+
+<div style="background:#07060A;color:#F6F5FF;font-family:'IBM Plex Mono',ui-monospace,monospace;min-width:0;overflow-x:hidden;position:relative;min-height:100vh">
+
+  <div style="position:fixed;inset:0;pointer-events:none;z-index:60;opacity:.5;background:repeating-linear-gradient(180deg,rgba(246,245,255,.045) 0px,rgba(246,245,255,.045) 1px,transparent 1px,transparent 3px);mix-blend-mode:overlay"></div>
+
+  <header style="position:sticky;top:0;z-index:50;background:rgba(7,6,10,.92);backdrop-filter:blur(8px);border-bottom:1px solid rgba(138,43,226,.55)">
+    <div style="max-width:1320px;margin:0 auto;padding:14px 20px;display:flex;align-items:center;gap:18px;flex-wrap:wrap">
+      <a href="../" style="display:flex;align-items:center;gap:10px;color:#F6F5FF;flex:0 0 auto">
+        <span style="width:14px;height:14px;background:#FF1F3D;box-shadow:3px 0 0 #8A2BE2,-3px 0 0 #FFE800;display:block"></span>
+        <span style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:20px;letter-spacing:.22em;animation:ipShiftR 7s infinite steps(1)">INK PUNK</span>
+      </a>
+      <nav style="display:flex;align-items:center;gap:4px;margin-left:auto;flex-wrap:wrap;justify-content:flex-end">
+        <a href="../" title="GALLERY" style="font-family:'Chakra Petch',sans-serif;font-weight:600;font-size:13px;letter-spacing:.14em;padding:8px 10px;border:1px solid transparent;color:#F6F5FF;border-color:transparent;display:flex;gap:6px;align-items:center" style-hover="border-color:#FFE800;color:#FFE800">GALLERY</a>
+        <a href="../stake/" title="Locked until activation" style="font-family:'Chakra Petch',sans-serif;font-weight:600;font-size:13px;letter-spacing:.14em;padding:8px 10px;border:1px solid transparent;color:rgba(246,245,255,.55);border-color:transparent;display:flex;gap:6px;align-items:center" style-hover="border-color:#FFE800;color:#FFE800">STAKE<span style="color:#FFE800;font-size:10px">▮</span></a>
+        <a href="../my-staking/" title="Locked until activation" style="font-family:'Chakra Petch',sans-serif;font-weight:600;font-size:13px;letter-spacing:.14em;padding:8px 10px;border:1px solid transparent;color:rgba(246,245,255,.55);border-color:transparent;display:flex;gap:6px;align-items:center" style-hover="border-color:#FFE800;color:#FFE800">MY STAKING<span style="color:#FFE800;font-size:10px">▮</span></a>
+        <a href="../season-1/" title="Locked until activation" style="font-family:'Chakra Petch',sans-serif;font-weight:600;font-size:13px;letter-spacing:.14em;padding:8px 10px;border:1px solid transparent;color:#FFE800;border-color:#FFE800;display:flex;gap:6px;align-items:center" style-hover="border-color:#FFE800;color:#FFE800">SEASON 1<span style="color:#FFE800;font-size:10px">▮</span></a>
+        <a href="../reward-vault/" title="Locked until activation" style="font-family:'Chakra Petch',sans-serif;font-weight:600;font-size:13px;letter-spacing:.14em;padding:8px 10px;border:1px solid transparent;color:rgba(246,245,255,.55);border-color:transparent;display:flex;gap:6px;align-items:center" style-hover="border-color:#FFE800;color:#FFE800">REWARD VAULT<span style="color:#FFE800;font-size:10px">▮</span></a>
+        <a href="../roadmap/" title="ROADMAP" style="font-family:'Chakra Petch',sans-serif;font-weight:600;font-size:13px;letter-spacing:.14em;padding:8px 10px;border:1px solid transparent;color:#F6F5FF;border-color:transparent;display:flex;gap:6px;align-items:center" style-hover="border-color:#FFE800;color:#FFE800">ROADMAP</a>
+        <a href="../claim/" style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:13px;letter-spacing:.14em;color:#F6F5FF;background:#8A2BE2;padding:9px 16px;border:1px solid #8A2BE2" style-hover="background:#FF7A00;border-color:#FF7A00;color:#07060A">CLAIM GTD ACCESS</a>
+        <a href="../whitelist/" style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:13px;letter-spacing:.14em;color:#07060A;background:#FFE800;padding:9px 16px;border:1px solid #FFE800" style-hover="background:#FF7A00;border-color:#FF7A00;color:#07060A">JOIN WHITELIST</a>
+      </nav>
+    </div>
+  </header>
+
+  <section data-screen-label="Season 1" style="max-width:1320px;margin:0 auto;padding:34px 20px">
+    <div style="display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:18px">
+      <h2 style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:clamp(26px,4vw,40px);letter-spacing:.04em;margin:0;color:#F6F5FF">SEASON 1</h2>
+      <span style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:11px;letter-spacing:.2em;color:#FFE800;border:1px solid #FFE800;padding:5px 10px">▮ LOCKED UNTIL ACTIVATION</span>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;margin-bottom:16px">
+      <div style="border:1px solid #8A2BE2;background:linear-gradient(180deg,rgba(138,43,226,.16),#0D0A14);padding:22px">
+        <div style="font-size:10px;letter-spacing:.24em;color:rgba(246,245,255,.6);margin-bottom:6px">SEASON 1 STARTS</div>
+        <div style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:22px;color:#FFE800;margin-bottom:16px">31 AUGUST · 13:00 UTC</div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap">
+          <sc-for list="{{ countdown }}" as="c" hint-placeholder-count="4">
+            <div style="border:1px solid rgba(246,245,255,.2);background:#07060A;padding:10px 14px;min-width:66px;text-align:center">
+              <div style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:26px;color:#F6F5FF">{{ c.v }}</div>
+              <div style="font-size:9px;letter-spacing:.2em;color:rgba(246,245,255,.5)">{{ c.k }}</div>
+            </div>
+          </sc-for>
+        </div>
+        <p style="font-size:12px;line-height:1.8;color:rgba(246,245,255,.7);margin:16px 0 0">The Season 1 reward period runs for 7 days from the start time. Individual stakes are independent: an NFT staked three days before the season ends still holds its own full 7-day lock.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:16px;align-content:start">
+        <div style="border:1px solid rgba(255,232,0,.45);background:#0D0A14;padding:18px"><div style="font-size:10px;letter-spacing:.22em;color:rgba(246,245,255,.55);margin-bottom:8px">$INKPUNK POOL</div><div style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:28px;color:rgba(246,245,255,.4)">—</div><div style="font-size:10px;color:#FFE800;letter-spacing:.16em;margin-top:6px">▮ LOCKED</div></div>
+        <div style="border:1px solid rgba(255,31,61,.45);background:#0D0A14;padding:18px"><div style="font-size:10px;letter-spacing:.22em;color:rgba(246,245,255,.55);margin-bottom:8px">ETH POOL</div><div style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:28px;color:rgba(246,245,255,.4)">—</div><div style="font-size:10px;color:#FFE800;letter-spacing:.16em;margin-top:6px">▮ LOCKED</div></div>
+        <div style="border:1px solid rgba(255,122,0,.45);background:#0D0A14;padding:18px"><div style="font-size:10px;letter-spacing:.22em;color:rgba(246,245,255,.55);margin-bottom:8px">NFTS STAKED</div><div style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:28px;color:rgba(246,245,255,.4)">—</div><div style="font-size:10px;color:#FFE800;letter-spacing:.16em;margin-top:6px">▮ LOCKED</div></div>
+        <div style="border:1px solid rgba(138,43,226,.55);background:#0D0A14;padding:18px"><div style="font-size:10px;letter-spacing:.22em;color:rgba(246,245,255,.55);margin-bottom:8px">PARTICIPANTS</div><div style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:28px;color:rgba(246,245,255,.4)">—</div><div style="font-size:10px;color:#FFE800;letter-spacing:.16em;margin-top:6px">▮ LOCKED</div></div>
+      </div>
+    </div>
+
+    <div style="border:1px solid rgba(138,43,226,.55);background:#0D0A14">
+      <div style="display:flex;gap:12px;align-items:center;padding:14px;border-bottom:1px solid rgba(138,43,226,.45)">
+        <span style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:15px;letter-spacing:.18em;color:#F6F5FF">LEADERBOARD</span>
+        <span style="font-size:10px;letter-spacing:.2em;color:rgba(246,245,255,.5);margin-left:auto">RANKED BY NFTS STAKED · WALLETS MASKED</span>
+      </div>
+      <div style="overflow-x:auto">
+        <div style="min-width:680px">
+          <div style="display:grid;grid-template-columns:70px 1fr 130px 1fr 1fr;font-size:10px;letter-spacing:.2em;color:rgba(246,245,255,.55);border-bottom:1px solid rgba(246,245,255,.12)">
+            <div style="padding:12px 14px">RANK</div>
+            <div style="padding:12px 14px">WALLET</div>
+            <div style="padding:12px 14px">NFTS STAKED</div>
+            <div style="padding:12px 14px">$INKPUNK REWARD</div>
+            <div style="padding:12px 14px">ETH REWARD</div>
+          </div>
+          <sc-for list="{{ leaderboard }}" as="l" hint-placeholder-count="5">
+            <div style="display:grid;grid-template-columns:70px 1fr 130px 1fr 1fr;border-bottom:1px solid rgba(246,245,255,.07);font-size:13px;color:rgba(246,245,255,.45)">
+              <div style="padding:13px 14px;font-family:'Chakra Petch',sans-serif;font-weight:700;color:#FFE800">{{ l.rank }}</div>
+              <div style="padding:13px 14px;color:rgba(246,245,255,.35)">{{ l.wallet }}</div>
+              <div style="padding:13px 14px">—</div>
+              <div style="padding:13px 14px">—</div>
+              <div style="padding:13px 14px">—</div>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+      <div style="padding:14px;font-size:12px;color:rgba(246,245,255,.55)">Ranking and reward figures stay empty until the staking system is activated.</div>
+    </div>
+  </section>
+
+
+  <footer style="border-top:1px solid rgba(138,43,226,.55);margin-top:30px;background:#0A0810">
+    <div style="max-width:1320px;margin:0 auto;padding:34px 20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:24px">
+      <div>
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px">
+          <span style="width:12px;height:12px;background:#FF1F3D;box-shadow:3px 0 0 #8A2BE2,-3px 0 0 #FFE800;display:block"></span>
+          <span style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:17px;letter-spacing:.2em;color:#F6F5FF">INK PUNK</span>
+        </div>
+        <div style="font-size:12px;line-height:1.9;color:rgba(246,245,255,.6)">2,000 NFTs<br />Ink Chain</div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <div style="font-size:10px;letter-spacing:.24em;color:rgba(246,245,255,.45);margin-bottom:4px">PAGES</div>
+        <a href="../" style="font-size:13px;color:#F6F5FF" style-hover="color:#FFE800">Home</a>
+        <a href="../whitelist/" style="font-size:13px;color:#F6F5FF" style-hover="color:#FFE800">Whitelist</a>
+        <a href="../claim/" style="font-size:13px;color:#F6F5FF" style-hover="color:#FFE800">Claim GTD Access</a>
+        <a href="../roadmap/" style="font-size:13px;color:#F6F5FF" style-hover="color:#FFE800">Roadmap</a>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <div style="font-size:10px;letter-spacing:.24em;color:rgba(246,245,255,.45);margin-bottom:4px">LOCKED</div>
+        <a href="../stake/" style="font-size:13px;color:#F6F5FF" style-hover="color:#FFE800">Stake</a>
+        <a href="../my-staking/" style="font-size:13px;color:#F6F5FF" style-hover="color:#FFE800">My Staking</a>
+        <a href="../season-1/" style="font-size:13px;color:#F6F5FF" style-hover="color:#FFE800">Season 1</a>
+        <a href="../reward-vault/" style="font-size:13px;color:#F6F5FF" style-hover="color:#FFE800">Reward Vault</a>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <div style="font-size:10px;letter-spacing:.24em;color:rgba(246,245,255,.45);margin-bottom:4px">OFFICIAL X</div>
+        <a href="https://x.com/ink_punk_" target="_blank" rel="noopener" style="font-size:13px;color:#FFE800;word-break:break-all">https://x.com/ink_punk_</a>
+      </div>
+    </div>
+    <div style="border-top:1px solid rgba(246,245,255,.08);padding:16px 20px;text-align:center;font-size:11px;letter-spacing:.16em;color:rgba(246,245,255,.35)">INK PUNK — STAKING SYSTEMS LOCKED UNTIL ACTIVATION</div>
+  </footer>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{}">
+const SEASON_START = Date.UTC(2026, 7, 31, 13, 0, 0);
+
+class Component extends DCLogic {
+  state = { now: Date.now() };
+
+  componentDidMount() {
+    this._tick = setInterval(() => this.setState({ now: Date.now() }), 1000);
+  }
+
+  componentWillUnmount() { clearInterval(this._tick); }
+
+  _countdown() {
+    let ms = SEASON_START - this.state.now;
+    if (ms < 0) ms = 0;
+    const s = Math.floor(ms / 1000);
+    const pad = (n) => String(n).padStart(2, "0");
+    return [
+      { k: "DAYS", v: pad(Math.floor(s / 86400)) },
+      { k: "HRS", v: pad(Math.floor((s % 86400) / 3600)) },
+      { k: "MIN", v: pad(Math.floor((s % 3600) / 60)) },
+      { k: "SEC", v: pad(s % 60) },
+    ];
+  }
+
+  renderVals() {
+    return {
+      countdown: this._countdown(),
+      leaderboard: [
+        { rank: "1st", wallet: "0x———...———" },
+        { rank: "2nd", wallet: "0x———...———" },
+        { rank: "3rd", wallet: "0x———...———" },
+        { rank: "4th", wallet: "0x———...———" },
+        { rank: "5th", wallet: "0x———...———" },
+      ],
+    };
+  }
+}
+</script>
+</body>
+</html>
